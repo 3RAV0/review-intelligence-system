@@ -250,3 +250,4 @@ logs/
 mlruns/
 wandb/
 
+venv_review/
