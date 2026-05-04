@@ -1,0 +1,114 @@
+{
+  "logistic_regression": {
+    "val": {
+      "model_name": "TF-IDF + Logistic Regression (Validation)",
+      "accuracy": 0.8602561222197259,
+      "f1_macro": 0.6746290246555485,
+      "f1_weighted": 0.8568028690193698,
+      "f1_per_class": {
+        "negative": 0.6995305164319249,
+        "neutral": 0.39037433155080214,
+        "positive": 0.9339822259839188
+      },
+      "precision_per_class": {
+        "negative": 0.6943150046598322,
+        "neutral": 0.42441860465116277,
+        "positive": 0.9271810670774401
+      },
+      "recall_per_class": {
+        "negative": 0.7048249763481551,
+        "neutral": 0.3613861386138614,
+        "positive": 0.9408838993889441
+      },
+      "inference_time_ms": 0.0005258225076950097,
+      "category_metrics": {
+        "Beauty": 0.6636991498636832,
+        "Books": 0.6512882232780092,
+        "Electronics": 0.6674457392727224
+      }
+    },
+    "test": {
+      "model_name": "TF-IDF + Logistic Regression (Test)",
+      "accuracy": 0.8522969785465574,
+      "f1_macro": 0.6555481774170234,
+      "f1_weighted": 0.848324089107498,
+      "f1_per_class": {
+        "negative": 0.6695443645083933,
+        "neutral": 0.3665338645418327,
+        "positive": 0.9305663032008442
+      },
+      "precision_per_class": {
+        "negative": 0.6789883268482491,
+        "neutral": 0.39598278335724535,
+        "positive": 0.9214265812203957
+      },
+      "recall_per_class": {
+        "negative": 0.6603595080416272,
+        "neutral": 0.3411619283065513,
+        "positive": 0.9398891573113543
+      },
+      "inference_time_ms": 0.0005298607217908026,
+      "category_metrics": {
+        "Beauty": 0.6555342581006219,
+        "Books": 0.6028740454939884,
+        "Electronics": 0.652726605251016
+      }
+    }
+  },
+  "lightgbm": {
+    "val": {
+      "model_name": "TF-IDF + LightGBM (Validation)",
+      "accuracy": 0.8620534711300831,
+      "f1_macro": 0.6281667371057974,
+      "f1_weighted": 0.8412409646400486,
+      "f1_per_class": {
+        "negative": 0.6743095362167796,
+        "neutral": 0.2793594306049822,
+        "positive": 0.9308312444956304
+      },
+      "precision_per_class": {
+        "negative": 0.7505800464037123,
+        "neutral": 0.49683544303797467,
+        "positive": 0.8894355256343863
+      },
+      "recall_per_class": {
+        "negative": 0.6121097445600757,
+        "neutral": 0.1943069306930693,
+        "positive": 0.9762682961489271
+      },
+      "inference_time_ms": 0.018600639775211265,
+      "category_metrics": {
+        "Beauty": 0.6066646319598864,
+        "Books": 0.6182545721351124,
+        "Electronics": 0.6273072757708603
+      }
+    },
+    "test": {
+      "model_name": "TF-IDF + LightGBM (Test)",
+      "accuracy": 0.8544310906436032,
+      "f1_macro": 0.6157815385164186,
+      "f1_weighted": 0.8324702292061756,
+      "f1_per_class": {
+        "negative": 0.638004246284501,
+        "neutral": 0.28468468468468466,
+        "positive": 0.9246556845800702
+      },
+      "precision_per_class": {
+        "negative": 0.7267230955259976,
+        "neutral": 0.5249169435215947,
+        "positive": 0.8807717041800643
+      },
+      "recall_per_class": {
+        "negative": 0.5685903500473037,
+        "neutral": 0.19530284301606923,
+        "positive": 0.9731419639050732
+      },
+      "inference_time_ms": 0.01838187695781421,
+      "category_metrics": {
+        "Beauty": 0.6010095984002922,
+        "Books": 0.5788657337929496,
+        "Electronics": 0.6218175345395122
+      }
+    }
+  }
+}
