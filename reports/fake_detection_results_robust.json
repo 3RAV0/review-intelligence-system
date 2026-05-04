@@ -1,0 +1,59 @@
+{
+  "config": {
+    "fake_threshold": 4,
+    "split_strategy": "user_stratified_GroupShuffleSplit",
+    "features": "tfidf_text_only_no_metadata",
+    "fake_rate_observed": 0.15973290526832096,
+    "evaluation_addresses_leakage": true
+  },
+  "logistic_regression": {
+    "model": "LogReg (Text-Only, User-Stratified)",
+    "accuracy": 0.7748288867160218,
+    "precision": 0.4669554058389477,
+    "recall": 0.658001808318264,
+    "f1": 0.5462563332707825,
+    "roc_auc": 0.8188159780872504,
+    "pr_auc": 0.5163186265131441,
+    "precision_at_top_100": 0.7,
+    "recall_at_top_10pct": 0.2967902350813743
+  },
+  "lightgbm": {
+    "model": "LightGBM (Text-Only, User-Stratified)",
+    "accuracy": 0.7588117521069051,
+    "precision": 0.44855743059335873,
+    "recall": 0.7450271247739603,
+    "f1": 0.5599728168535508,
+    "roc_auc": 0.8327241517218579,
+    "pr_auc": 0.5464452979450783,
+    "precision_at_top_100": 0.77,
+    "recall_at_top_10pct": 0.30537974683544306
+  },
+  "isolation_forest": {
+    "model": "Isolation Forest (Unsupervised)",
+    "accuracy": 0.7070354332541788,
+    "precision": 0.08599290780141844,
+    "recall": 0.04385171790235081,
+    "f1": 0.05808383233532934,
+    "roc_auc": 0.39135841810697825,
+    "pr_auc": 0.1667330502516693,
+    "precision_at_top_100": 0.34,
+    "recall_at_top_10pct": 0.04226943942133816
+  },
+  "hybrid": {
+    "model": "Hybrid: 60% LGB + 40% IsoForest",
+    "accuracy": 0.8199469199608884,
+    "precision": 0.6037243947858473,
+    "recall": 0.3664104882459313,
+    "f1": 0.4560416373610916,
+    "roc_auc": 0.8193143048122813,
+    "pr_auc": 0.5383213615407936,
+    "precision_at_top_100": 0.76,
+    "recall_at_top_10pct": 0.3022151898734177
+  },
+  "comparison_to_naive": {
+    "note": "Naive run had label leakage. Robust run shows true difficulty.",
+    "naive_lgb_f1": 0.9339,
+    "robust_lgb_f1": 0.5599728168535508,
+    "leakage_size": 0.3739271831464491
+  }
+}
